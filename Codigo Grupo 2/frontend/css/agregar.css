@@ -1,0 +1,176 @@
+/* Formatear los márgenes, rellenos y modelo de caja para todos los elementos */
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* Estilos para el cuerpo del documento y los campos de entrada */
+body, .input-field, .button{
+    font-family: 'Poppins', sans-serif;
+}
+/* Estilos para el encabezado */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+/* Estilos para el logo */
+.logo img{
+    max-width: 200px;
+    height: auto;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+/* Estilos para el logo */
+.logo img{
+    max-width: 200px;
+    height: auto;
+}
+/* Estilos para la barra de navegación */
+.navMenu {
+    display: flex;
+    align-items: center;
+}
+/* Estilos para los enlaces de navegación */
+.navMenu a{
+    color: black;
+    font-size: .9375rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 40px;
+    font-weight: 500;
+    transition: background-color .42s ease;
+}
+/* Estilos al pasar el cursor sobre los enlaces de navegación */
+.navMenu a:hover {
+    color: #FF9858;
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+/* Estilos para los iconos de navegación */
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+/* Estilos al pasar el cursor sobre los iconos de navegación */
+.nav-icon a {
+    color: black;
+    padding: 20px 10px;
+    transition: all .42s ease;
+}
+/* Estilos al pasar el cursor sobre los iconos de navegación */
+.nav-icon a:hover{
+    transform: scale(1.1);
+    color: #FF9858;
+    cursor: pointer;
+}
+/* Estilos para la lista desplegable de productos */
+.cont-ul {
+    position: absolute;
+    top: 100%;
+    left: 27px;
+    width: 140px;
+    background-color: white;
+    padding: 10px;
+    display: none;
+    z-index: 2;
+}
+/* Estilos para el espaciado entre elementos de la barra de navegación */
+.navMenu li {
+    margin-right: 20px; 
+}
+/* Estilos para el elemento "Productos" y su lista desplegable */  
+.navMenu .list-products {
+    position: relative;
+}
+/* Estilos para los enlaces de la lista desplegable de productos */
+.navMenu .list-products a {
+    display: inline-flex;
+    align-items: center;
+}
+/* Estilos para el ícono de la lista desplegable de productos */  
+.navMenu .list-products .iconify {
+    margin-left: 5px;
+}
+/* Estilos para el contenedor de la lista desplegable */
+.cont-ul {
+    position:absolute;
+    top: 40px;
+}
+/* Estilos para los enlaces de la lista desplegable */
+.cont-ul a{
+    padding: 3px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.42s ease;
+    text-transform: uppercase;
+}
+
+/* Estilos para mostrar la lista al hacer clic en "Productos" */
+.navMenu li:hover .cont-ul {
+    display: block;
+}
+/* Estilos al pasar el cursor sobre los enlaces de la lista desplegable */
+.cont-ul a:hover{
+    font-weight: 500;
+    color: #FD904C;
+}
+.small-container{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.single-product{
+    margin-top: 80px;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;;
+}
+
+.small-img-col{
+    flex-basis:24%;
+    cursor: pointer;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}

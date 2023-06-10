@@ -1,0 +1,527 @@
+/* Estilos generales */
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* Estilos para el cuerpo del documento y los campos de entrada */
+body, .input-field, .button{
+    font-family: 'Poppins', sans-serif;
+}
+/* Estilos para el encabezado */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+/* Estilos para el logo */
+.logo img{
+    max-width: 200px;
+    height: auto;
+}
+/* Estilos para la barra de navegación */
+.navMenu {
+    display: flex;
+    align-items: center;
+}
+/* Estilos para los enlaces de navegación */
+.navMenu a{
+    color: black;
+    font-size: .9375rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 40px;
+    font-weight: 500;
+    transition: background-color .42s ease;
+}
+/* Estilos al pasar el cursor sobre los enlaces de navegación */
+.navMenu a:hover {
+    color: #FF9858;
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+/* Estilos para los iconos de navegación */
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+/* Estilos al pasar el cursor sobre los iconos de navegación */
+.nav-icon a {
+    color: black;
+    padding: 20px 10px;
+    transition: all .42s ease;
+}
+/* Estilos al pasar el cursor sobre los iconos de navegación */
+.nav-icon a:hover{
+    transform: scale(1.1);
+    color: #FF9858;
+    cursor: pointer;
+}
+/* Estilos para la lista desplegable de productos */
+.cont-ul {
+    position: absolute;
+    top: 100%;
+    left: 27px;
+    width: 140px;
+    background-color: white;
+    padding: 10px;
+    display: none;
+    z-index: 2;
+}
+/* Estilos para el espaciado entre elementos de la barra de navegación */
+.navMenu li {
+    margin-right: 20px; 
+}
+/* Estilos para el elemento "Productos" y su lista desplegable */  
+.navMenu .list-products {
+    position: relative;
+}
+/* Estilos para los enlaces de la lista desplegable de productos */
+.navMenu .list-products a {
+    display: inline-flex;
+    align-items: center;
+}
+/* Estilos para el ícono de la lista desplegable de productos */  
+.navMenu .list-products .iconify {
+    margin-left: 5px;
+}
+/* Estilos para el contenedor de la lista desplegable */
+.cont-ul {
+    position:absolute;
+    top: 40px;
+}
+/* Estilos para los enlaces de la lista desplegable */
+.cont-ul a{
+    padding: 3px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.42s ease;
+    text-transform: uppercase;
+}
+
+/* Estilos para mostrar la lista al hacer clic en "Productos" */
+.navMenu li:hover .cont-ul {
+    display: block;
+}
+/* Estilos al pasar el cursor sobre los enlaces de la lista desplegable */
+.cont-ul a:hover{
+    font-weight: 500;
+    color: #FD904C;
+}
+/* Estilos para la sección */
+section{
+    padding: 5% 10%;
+}
+/* Estilos para la sección principal de la página de inicio */
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/pexels-sound-on-3394666.jpg);
+    background-position:right;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.main-text {
+    width: 40%;
+}
+/* Estilos para el subtitulo */
+.feauter-subtitle{
+    padding: 10px 0px;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+/* Estilos para el titulo */
+.feauter-title{
+    padding: 10px 0px;
+    color: #FF9858;
+    font-size: 40px;
+}
+
+.feauter-text{
+    padding: 10px 0px;
+    padding-bottom: 35px;
+    color: black;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.button{
+    width: 184px;
+    height: 57px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+/* Estilos para la flecha que señala abajo */
+.down-arrow{
+    position: absolute;
+    top:85%;
+    right: 11%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2c2c2c;
+    border-radius: 50%;
+    color: black;
+}
+
+.down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.down-arrow:hover{
+    background-color: black;
+    transition: all .42s ease;
+}
+
+.down:hover{
+    color: white;
+}
+/* Estilos para el encabezado fijo */
+header.sticky {
+    background-color: #fff;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgba(0 0 0/ 10%);
+}
+/* Estilos para el texto centrado en secciones */
+.center-text h2{
+    color: black;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 6px;
+    padding-bottom: 30px;
+}
+/* Estilos para la línea divisora */
+.line {
+    position: relative;
+}
+/* Estilos para la sección de productos */
+.line::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #A0A0A0;
+}
+
+.bottom-top::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #A0A0A0;
+}
+/* Estilos para la sección de productos */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+/* Estilos para las filas de productos */
+.row{
+    position: relative;
+    transition: all 0.40s;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    height: 450px;
+}
+/* Estilos para las imágenes de productos */
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+    text-align: center;
+    cursor: pointer;
+}
+/* Estilos al pasar el cursor sobre las imágenes de productos */
+.row img:hover, .row-three img:hover{
+    transform: scale(0.9);
+}
+/* Estilos para el texto de productos */
+.product-text {
+    position: absolute;
+    bottom: 50px;
+    left: 140px;
+    text-transform: uppercase;
+}
+/* Estilos para el ícono de compra */
+.buy-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+/* Estilos para los enlaces de compra */  
+.buy-icon a {
+    display: inline;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* Estilos para la sección de clientes y rectángulo */
+.clients, .rectangle{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+/* Estilos para la sección de clientes */
+.clients {
+    text-align: center;
+}
+/* Estilos para las filas de la sección de clientes */
+.row-two, .row-three{
+    position: relative;
+    transition: all 0.40s;
+}
+/* Estilos para las imágenes de la sección de clientes */
+.row-two img, .row-three img{
+    width: 60%;
+    height: auto;
+    transition: all .40s;
+    text-align: center;
+    cursor: pointer;
+}
+/* Estilos para la tercera fila de la sección de clientes */
+.row-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;  
+}
+/* Estilos para el texto de las novedades */
+.row-three img{
+    width: 100%;
+}
+/* Estilos para el encabezado h5 */
+.new-text h5 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* Estilos para el encabezado h4 */
+.new-text h4 {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+.new-text p {
+    font-size: 12px;
+    padding: 5px 0px;
+}
+/* Estilos para el rectángulo */
+.rectangle {
+    width: 100%;
+    height: auto;
+    background-color: #FD904C;
+}
+/* Estilos para el pie de página */
+footer {
+    margin-top: 40px;
+    background-color: black;
+    height: 300px;
+    text-align: center;
+}
+/* Estilos para la sección del rectángulo en el pie de página */
+.rectangle-section {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+/* Estilos para los íconos en el pie de página */
+.footer-icon a{
+    color: white;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* Estilos para el menú del pie de página */
+.footerMenu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    padding:  40px 0px;
+}
+/* Estilos para los íconos en el menú del pie de página */
+.footer-icon {
+    display: flex;
+    align-items: center;
+}
+/* Estilos para los enlaces del menú del pie de página */  
+.footerMenu a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase; 
+}
+/* Estilos para los enlaces de lista en el menú del pie de página */
+.footerMenu ul a{
+    padding: 20px 0px;
+}
+/* Estilos para los elementos de lista en el menú del pie de página */
+.footerMenu li {
+    text-align: center;
+}
+/* Estilos para la sección de compra en el pie de página */
+.footer-buy {
+    text-align: center;
+}
+/* Estilos para el texto de derechos de autor */
+.copyright{
+    color: white;
+    font-size: 12px;
+    padding: 20px 0px;
+}
+
+/*AUDIFONOS Y AIRPODS / CELULARES / LAPTOPS Y TABLETS / ACCESORIOS*/
+/* Estilos para la selección de productos */
+.products-selection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    place-items: center;
+    
+}
+/* Estilos para el título de la selección de productos */
+.selection h2{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 5px;
+    text-align: left;
+    font-size: 32px;
+    color: #FD904C;
+}
+/* Estilos para las imágenes de la selección de productos */
+.imge {
+    width: 60%;
+    height: auto;
+    cursor: pointer;
+}
+/* Estilos para el texto secundario de la selección de productos */
+.sub-text {
+    color: #A0A0A0;
+    font-size: 15px;
+    font-weight: 400;
+    padding-right: 80px;
+}
+/* Estilos al pasar el cursor sobre el texto secundario de la selección de productos */
+.sub-text:hover {
+    color: #2c2c2c;
+}
+/* Estilos para el título de padding */
+.padding h2{
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+
+/* Estilos para dispositivos móviles y tablets pequeñas */
+@media (max-width: 850px){
+    .box{
+        height: auto;
+        max-width: 550px;
+        overflow: hidden;
+    }
+
+    .inner-box{
+        position: static;
+        transform: none;
+        width: revert;
+        height: revert;
+        padding: 2rem;
+    }
+
+    .forms-wrap{
+        position: revert;
+        width: 100%;
+        height: auto;
+
+    }
+    
+    form{
+        max-width: revert;
+        padding: 1.5rem 2.5rem 2rem;
+    }
+
+    .heading{
+        margin: 2rem 0;
+    }
+
+    .images{
+        position: revert;
+        height: auto;
+        width: 100%;
+        padding: 3rem 2rem;
+        display: flex;
+    }
+
+    .images-wrapper{
+        display: none;
+    }
+
+}
+/* Estilos para dispositivos móviles más pequeños */
+@media (max-width: 530px){
+    main {
+        padding: 1rem;
+    }
+    .box{
+        border-radius: 2rem;
+    }
+    .inner-box {
+        padding: 1rem;
+    }
+    .images{
+        padding: 1.5rem 1rem;
+        border-radius: 1.6rem;
+    }
+    .feature__title{
+        margin-bottom: 1rem;
+    }
+    
+    form{
+        padding: 1rem 1rem 1.5rem;
+    }
+}
